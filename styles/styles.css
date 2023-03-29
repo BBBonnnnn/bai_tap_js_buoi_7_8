@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.card .card-body button {
+    border-radius:  30px ;
+}
+
+
+.card-body button {
+  transform: translateY(5px);
+}
+
+#so-nhap {
+  box-shadow : 3px 3px 3px 3px black;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#vi-tri-1, #vi-tri-2 {
+  box-shadow : 3px 3px 3px 3px black;
+  background-color: #fff;
+  border-radius: 5px;
+}
+

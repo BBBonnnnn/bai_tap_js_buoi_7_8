@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập mảng</title>
+    <!-- css fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- css custom -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="card w-75 mx-auto my-5">
+        <div class="card-header text-center fs-3 fw-bold bg-info">
+            ARRAY HOMEWORK
+        </div>
+        <div class="card-body">
+            <div class="form-nhap border">
+                <input type="number" placeholder="nhập vào số nguyên n" class="p-2 w-50"  id="so-nhap">
+                <button class="btn btn-primary px-5 py-2 mx-5" id="btnThemSo">Thêm Số</button>
+                <div class="alert alert-success my-3 py-3 hien-thi" id="hien-thi-so">
+            </div>
+            
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div> <span class="p-1 text-light bg-info border border-light ">1</span> Tổng số dương:</div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnTongSoDuong">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien_thi" id="hien-thi-tong-so-duong"></div>
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div><span class="p-1 text-light bg-info border border-light ">2</span>Đếm số dương:</div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnDemSoDuong">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien_thi" id="hien-thi-so-luong-so-duong"></div>
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div><span class="p-1 text-light bg-info border border-light ">3</span>Tìm số nhỏ nhất</div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnTimSoNhoNhat">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien_thi" id="tim-so-nho-nhat"></div>
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div><span class="p-1 text-light bg-info border border-light ">4</span>Tìm số dương nhỏ nhất</div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnTimSoDuongNhoNhat">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien_thi" id="hien-thi-so-duong-nho-nhat"></div>
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div><span class="p-1 text-light bg-info border border-light ">5</span>Tìm số chẵn cuối cùng</div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnTimSoChanCuoiCung">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien_thi" id="hien-thi-so-chan-cuoi-cung"></div>
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <p><span class="p-1 text-light bg-info border border-light ">6</span>Đổi chỗ</p> <br>
+                    <div class="row">  
+                        <div class="col-6">
+                            <input type="number" placeholder="Nhập vị trí 1" id="vi-tri-1">
+                        </div>
+                        <div class="col-6">
+                            <input type="number" placeholder="Nhập vị trí 2" id="vi-tri-2">
+                        </div>
+
+                    </div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnDoiCho">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien_thi" id="hien-thi-doi-cho"></div>
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div><span class="p-1 text-light bg-info border border-light ">7</span>Sắp xếp tăng dần</div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnSapXepTangDan">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien_thi" id="hien-thi-tang-dan"></div>
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div><span class="p-1 text-light bg-info border border-light ">8</span>Tìm số nguyên tố đầu tiên</div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnTimSoNguyenToDauTien">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien_thi" id="hien-thi-so-nguyen-to-dau-tien"></div>
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div><span class="p-1 text-light bg-info border border-light ">9</span>Đếm số nguyên</div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnDemSoNguyen">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien-thi" id="hien-thi-dem-so-nguyen"></div>
+            </div>
+            <div class="form-group border">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div><span class="p-1 text-light bg-info border border-light ">10</span>So sánh số lượng số âm và dương</div>
+                    <button class="btn btn-primary px-4 mx-2" id="btnSoSanhAmDuong">Run</button>
+                </div>
+                <div class="alert alert-success py-3  my-2 hien_thi" id="hien-thi-so-sanh-am-duong"></div>
+            </div>
+           
+            
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <!-- js lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- js custom -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
